@@ -1,0 +1,63 @@
+@import "./extends/extends";
+@import "./mixins/mixins";
+@import "./variables/variables";
+@import "./functions/functions";
+.box {
+    background-color: $color-first;
+    width: 200px;
+    height: 200px;
+    .title {
+        &:hover {
+            background-color: yellowgreen;
+        }
+        // @extend .box;
+        background-color: whitesmoke;
+        >h1 {
+            color: $color-second;
+        }
+        [random=attr] {
+            color: yellow;
+        }
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    @if $theme==dark {
+        background-color: black;
+        color: white;
+    }
+    @else if $theme==light {
+        background-color: white;
+        color: black;
+    }
+    @else {
+        background-color: whitesmoke;
+        color: grey
+    }
+}
+
+.error-model {
+    // @extend %model-props;
+    @include model-props(red);
+    // background-color: $color-second;
+    // border: 2px solid red;
+}
+
+.success-model {
+    @include model-props(yellowgreen, green);
+}
+
+.info-model {
+    @include model-props(aqua, blue);
+}
+
+.function {
+    @include model-props(aqua, blue);
+    position: absolute;
+    top: size(3, 5) *1px;
+    width: sum(30px, 60px, 80px);
+}

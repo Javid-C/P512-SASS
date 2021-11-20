@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#Team {
+    background-color: rgb(240, 240, 240);
+    height: 100vh;
+}
+
+#Team .title .little-text h5 {
+    color: teal;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    display: flex;
+    align-items: center;
+}
+
+#Team .title .little-text h5::after {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 2px;
+    background-color: orange;
+    margin-left: 10px;
+}
+
+#Team .title .main-text {
+    text-transform: uppercase;
+}
+
+#Team .item {
+    background-image: url(https://bootstrapmade.com/demo/templates/Dewi/assets/img/team/team-1.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 32%;
+}
+
+#Team .item:hover .info {
+    opacity: 1;
+}
+
+#Team .item:hover .name h6::after {
+    width: 100px;
+}
+
+#Team .info {
+    background-color: white;
+    padding: 15px;
+    position: absolute;
+    width: 100%;
+    bottom: -50px;
+    /* opacity: 0; */
+    transition: .4s;
+}
+
+#Team .info .name h6::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background-color: aqua;
+    margin-top: 10px;
+    transition: .3s;
+    transition-delay: 0.2s;
+}
+
+#Team .info .profession p {
+    font-style: italic;
+}
+
+#Team .info .social ul li {
+    margin-left: 15px;
+}

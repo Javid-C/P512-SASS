@@ -1,0 +1,72 @@
+.box {
+  background-color: teal;
+  width: 200px;
+  height: 200px;
+}
+
+.box .title {
+  background-color: whitesmoke;
+}
+
+.box .title:hover {
+  background-color: yellowgreen;
+}
+
+.box .title > h1 {
+  color: #ff6868;
+}
+
+.box .title [random=attr] {
+  color: yellow;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-color: whitesmoke;
+  color: grey;
+}
+
+.error-model {
+  width: 200px;
+  height: 200px;
+  margin-left: 20px;
+  background-color: red;
+  border: 2px solid black;
+}
+
+.success-model {
+  width: 200px;
+  height: 200px;
+  margin-left: 20px;
+  background-color: yellowgreen;
+  border: 2px solid green;
+}
+
+.info-model {
+  width: 200px;
+  height: 200px;
+  margin-left: 20px;
+  background-color: aqua;
+  border: 2px solid blue;
+}
+
+.function {
+  width: 200px;
+  height: 200px;
+  margin-left: 20px;
+  background-color: aqua;
+  border: 2px solid blue;
+  position: absolute;
+  top: 25px;
+  width: 170px;
+}
+/*# sourceMappingURL=main.css.map */

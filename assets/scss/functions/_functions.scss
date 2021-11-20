@@ -1,0 +1,15 @@
+@function size($end, $ratio) {
+    $result: 1;
+    @for $_ from 1 to $end {
+        $result: $result * $ratio;
+    }
+    @return $result;
+}
+
+@function sum($numbers...) {
+    $total: 0;
+    @each $number in $numbers {
+        $total: $total+$number;
+    }
+    @return $total;
+}

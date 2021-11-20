@@ -1,0 +1,7 @@
+@mixin model-props($bg-color, $border-color:black) {
+    width: 200px;
+    height: 200px;
+    margin-left: 20px;
+    background-color: $bg-color;
+    border: 2px solid $border-color;
+}
